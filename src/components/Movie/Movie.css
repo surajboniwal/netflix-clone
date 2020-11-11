@@ -1,0 +1,13 @@
+.moviePoster{
+    margin-right: 12px;
+    transition: transform 450ms;
+    height: 250px;
+}
+
+.moviePoster:hover{
+    transform: scale(1.08);
+}
+
+.movieLargePoster{
+    height: 400px;
+}

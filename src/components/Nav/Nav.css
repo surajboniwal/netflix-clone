@@ -1,0 +1,108 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 350ms;
+    transition-timing-function: ease-in;
+}
+
+.nav_black{
+    background-color: black;
+}
+
+.nav > .left, .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu > li{
+    margin-right: 24px;
+}
+
+.logo{
+    width: 150px;
+    margin: 0 24px 0 24px;
+    padding: 8px 0 8px 0;
+}
+
+.searchItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.searchIcon{
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+.right > *{
+    margin-right: 24px;
+}
+
+.right > .bellIcon{
+    font-size: 24px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile > img{
+    width: 32px;
+    margin-right: 8px;
+}
+
+.profile > a{
+    font-size: 12px;
+}
+
+.menuIcon{
+    font-size: 24px;
+    display: none;
+}
+
+.dropdownIcon{
+    margin-left: 4px;
+}
+
+.mainMenu{
+    display: none;
+}
+
+@media only screen and (max-width: 630px) {
+    .right > .searchItem, .bellIcon, .profile{
+        display: none;
+    }
+    
+    .menuIcon{
+        font-size: 24px;
+        display: block;
+    }
+    .mainMenu{
+        color: black;
+        height: 200px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .menu{
+        display: none;
+    }
+}
